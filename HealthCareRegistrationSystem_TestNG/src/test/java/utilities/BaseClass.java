@@ -89,7 +89,10 @@ public class BaseClass
 	public void closeBrowser() throws InterruptedException
 	{
 		Thread.sleep(2000);
+		if(driver != null)
+		{
 		driver.quit();
+		}
 		
 	}
    
