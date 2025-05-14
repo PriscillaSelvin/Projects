@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="utilities.ListenerImplementation"/>
+	</listeners>
+  <test thread-count="5" name="Test">
+  <groups>
+<run>
+<include name="sanity"> </include>
+</run>
+</groups>
+  <classes>
+<class name="TeestClasses.LoginTest"/>
+<class name="TeestClasses.RegisterPatientTest"/>
+<class name="TeestClasses.appointmentTest"/>
+<class name="TeestClasses.startvisitTest"/>
+<class name="TeestClasses.AddPatVitalsTest"/>
+<class name="TeestClasses.conditionsTest"/> 
+<class name="TeestClasses.exitvisitTest"/>
+<class name="TeestClasses.Extent_Report"/>
+ 
+</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
