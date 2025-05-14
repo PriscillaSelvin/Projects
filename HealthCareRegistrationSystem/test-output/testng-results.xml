@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="12" total="20" passed="8" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[My Test Case got passed]]>
+    </line>
+    <line>
+      <![CDATA[My Test Case got passed]]>
+    </line>
+    <line>
+      <![CDATA[My Test Case got passed]]>
+    </line>
+    <line>
+      <![CDATA[My Test Case got passed]]>
+    </line>
+    <line>
+      <![CDATA[My Test Case got passed]]>
+    </line>
+    <line>
+      <![CDATA[My Test Case got passed]]>
+    </line>
+    <line>
+      <![CDATA[My Test Case got passed]]>
+    </line>
+    <line>
+      <![CDATA[All scenarios passed]]>
+    </line>
+    <line>
+      <![CDATA[My Test Case got passed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-05-13T08:51:55 EDT" name="Suite" finished-at="2025-05-13T08:52:55 EDT" duration-ms="60352">
+    <groups>
+      <group name="sanity">
+        <method signature="Extent_Report.demoTest()[pri:0, instance:TeestClasses.Extent_Report@48075da3]" name="demoTest" class="TeestClasses.Extent_Report"/>
+        <method signature="LoginTest.executeLoginTest()[pri:0, instance:TeestClasses.LoginTest@28261e8e]" name="executeLoginTest" class="TeestClasses.LoginTest"/>
+        <method signature="RegisterPatientTest.addPatient(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:TeestClasses.RegisterPatientTest@5afa3c9]" name="addPatient" class="TeestClasses.RegisterPatientTest"/>
+        <method signature="appointmentTest.createAppointment()[pri:2, instance:TeestClasses.appointmentTest@72035809]" name="createAppointment" class="TeestClasses.appointmentTest"/>
+        <method signature="startvisitTest.createVisit()[pri:3, instance:TeestClasses.startvisitTest@909217e]" name="createVisit" class="TeestClasses.startvisitTest"/>
+        <method signature="AddPatVitalsTest.addPatVitals()[pri:4, instance:TeestClasses.AddPatVitalsTest@18271936]" name="addPatVitals" class="TeestClasses.AddPatVitalsTest"/>
+        <method signature="conditionsTest.executeConditions()[pri:5, instance:TeestClasses.conditionsTest@606e4010]" name="executeConditions" class="TeestClasses.conditionsTest"/>
+        <method signature="exitvisitTest.endVisit()[pri:6, instance:TeestClasses.exitvisitTest@8458f04]" name="endVisit" class="TeestClasses.exitvisitTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2025-05-13T08:51:55 EDT" name="Test" finished-at="2025-05-13T08:52:55 EDT" duration-ms="60352">
+      <class name="TeestClasses.AddPatVitalsTest">
+        <test-method signature="addPatVitals()[pri:4, instance:TeestClasses.AddPatVitalsTest@18271936]" started-at="2025-05-13T08:52:40 EDT" name="addPatVitals" finished-at="2025-05-13T08:52:42 EDT" duration-ms="2319" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[My Test Case got passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addPatVitals -->
+      </class> <!-- TeestClasses.AddPatVitalsTest -->
+      <class name="TeestClasses.Extent_Report">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TeestClasses.Extent_Report@48075da3]" started-at="2025-05-13T08:51:47 EDT" name="setup" finished-at="2025-05-13T08:51:48 EDT" duration-ms="669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="demoTest()[pri:0, instance:TeestClasses.Extent_Report@48075da3]" started-at="2025-05-13T08:52:55 EDT" name="demoTest" finished-at="2025-05-13T08:52:55 EDT" duration-ms="23" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[All scenarios passed]]>
+            </line>
+            <line>
+              <![CDATA[My Test Case got passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- demoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TeestClasses.Extent_Report@48075da3]" started-at="2025-05-13T08:52:55 EDT" name="tearDown" finished-at="2025-05-13T08:52:56 EDT" duration-ms="826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TeestClasses.Extent_Report -->
+      <class name="TeestClasses.startvisitTest">
+        <test-method signature="createVisit()[pri:3, instance:TeestClasses.startvisitTest@909217e]" started-at="2025-05-13T08:52:36 EDT" name="createVisit" finished-at="2025-05-13T08:52:40 EDT" duration-ms="3724" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[My Test Case got passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createVisit -->
+      </class> <!-- TeestClasses.startvisitTest -->
+      <class name="TeestClasses.LoginTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:TeestClasses.LoginTest@28261e8e]" started-at="2025-05-13T08:51:48 EDT" name="openBrowser" finished-at="2025-05-13T08:51:55 EDT" duration-ms="6920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="executeLoginTest()[pri:0, instance:TeestClasses.LoginTest@28261e8e]" started-at="2025-05-13T08:51:55 EDT" name="executeLoginTest" finished-at="2025-05-13T08:52:02 EDT" duration-ms="6868" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[My Test Case got passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- executeLoginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TeestClasses.LoginTest@28261e8e]" started-at="2025-05-13T08:52:56 EDT" name="closeBrowser" finished-at="2025-05-13T08:52:59 EDT" duration-ms="2752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TeestClasses.LoginTest -->
+      <class name="TeestClasses.RegisterPatientTest">
+        <test-method signature="addPatient(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:TeestClasses.RegisterPatientTest@5afa3c9]" started-at="2025-05-13T08:52:02 EDT" name="addPatient" data-provider="registerpatientdata" finished-at="2025-05-13T08:52:26 EDT" duration-ms="23718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Green]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[82]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Manitoba]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[My Test Case got passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addPatient -->
+      </class> <!-- TeestClasses.RegisterPatientTest -->
+      <class name="TeestClasses.exitvisitTest">
+        <test-method signature="endVisit()[pri:6, instance:TeestClasses.exitvisitTest@8458f04]" started-at="2025-05-13T08:52:48 EDT" name="endVisit" finished-at="2025-05-13T08:52:55 EDT" duration-ms="6550" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[My Test Case got passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- endVisit -->
+      </class> <!-- TeestClasses.exitvisitTest -->
+      <class name="TeestClasses.appointmentTest">
+        <test-method signature="createAppointment()[pri:2, instance:TeestClasses.appointmentTest@72035809]" started-at="2025-05-13T08:52:26 EDT" name="createAppointment" finished-at="2025-05-13T08:52:36 EDT" duration-ms="10074" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[My Test Case got passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createAppointment -->
+      </class> <!-- TeestClasses.appointmentTest -->
+      <class name="TeestClasses.conditionsTest">
+        <test-method signature="executeConditions()[pri:5, instance:TeestClasses.conditionsTest@606e4010]" started-at="2025-05-13T08:52:43 EDT" name="executeConditions" finished-at="2025-05-13T08:52:48 EDT" duration-ms="5094" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[My Test Case got passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- executeConditions -->
+      </class> <!-- TeestClasses.conditionsTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
