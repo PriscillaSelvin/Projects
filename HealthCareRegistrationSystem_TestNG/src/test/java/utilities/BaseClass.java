@@ -26,6 +26,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.edge.EdgeOptions;
  
  
 
@@ -48,7 +49,13 @@ public class BaseClass
 	   }
 	   if(browserName.equalsIgnoreCase("edge"))
 	   {
-		   driver = new EdgeDriver();
+		   EdgeOptions options = new EdgeOptions();
+        options.addArguments("--headless=new"); // or "--headless" if "new" fails
+        options.addArguments("--disable-gpu");
+        options.addArguments("--window-size=1920,1080");
+
+        driver = new EdgeDriver(options);
+		    
 		   driver.get(FetchDataFromProperty.readDataFromProperty().getProperty("URL"));
 		   driver.manage().window().maximize();
 	   }
