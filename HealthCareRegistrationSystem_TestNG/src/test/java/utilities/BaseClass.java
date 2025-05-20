@@ -53,8 +53,7 @@ public class BaseClass
                    options.addArguments("--headless=new"); // or "--headless" if "new" fails
                    options.addArguments("--disable-gpu");
                    options.addArguments("--window-size=1920,1080");
-                   driver = new EdgeDriver(options);
-		   Thread.Sleep(3000);
+                   driver = new EdgeDriver(options);		   
 		   String URL_address = FetchDataFromProperty.readDataFromProperty().getProperty("URL");
 		   driver.get(URL_address);
 		   driver.manage().window().maximize();
