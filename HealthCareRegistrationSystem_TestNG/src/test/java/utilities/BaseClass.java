@@ -50,8 +50,8 @@ public class BaseClass
 	   if(browserName.equalsIgnoreCase("edge"))
 	   {
 		   EdgeOptions options = new EdgeOptions();
-                   options.addArguments("--headless=new"); // or "--headless" if "new" fails
-                   options.addArguments("--disable-gpu");
+                   options.addArguments("--headless"); // or "--headless" if "new" fails
+                   //options.addArguments("--disable-gpu");
                    options.addArguments("--window-size=1920,1080");
                    driver = new EdgeDriver(options);		   
 		   String URL_address = FetchDataFromProperty.readDataFromProperty().getProperty("URL");
