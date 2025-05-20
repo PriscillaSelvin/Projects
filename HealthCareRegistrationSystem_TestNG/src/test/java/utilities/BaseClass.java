@@ -45,18 +45,18 @@ public class BaseClass
 	   {
 		   driver = new ChromeDriver();
 		   driver.get(FetchDataFromProperty.readDataFromProperty().getProperty("URL"));
-		 driver.manage().window().maximize();
+		   driver.manage().window().maximize();
 	   }
 	   if(browserName.equalsIgnoreCase("edge"))
 	   {
 		   EdgeOptions options = new EdgeOptions();
-        options.addArguments("--headless=new"); // or "--headless" if "new" fails
-        options.addArguments("--disable-gpu");
-        options.addArguments("--window-size=1920,1080");
-
-        driver = new EdgeDriver(options);
-		    
-		   driver.get(FetchDataFromProperty.readDataFromProperty().getProperty("URL"));
+                   options.addArguments("--headless=new"); // or "--headless" if "new" fails
+                   options.addArguments("--disable-gpu");
+                   options.addArguments("--window-size=1920,1080");
+                   driver = new EdgeDriver(options);
+		   Thread.Sleep(3000);
+		   String URL_address = FetchDataFromProperty.readDataFromProperty().getProperty("URL");
+		   driver.get(URL_address);
 		   driver.manage().window().maximize();
 	   }
 	   if(browserName.equalsIgnoreCase("fiefox"))
