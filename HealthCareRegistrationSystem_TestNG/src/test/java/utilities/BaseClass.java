@@ -26,6 +26,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.edge.EdgeOptions;
  
  
 
@@ -44,12 +45,17 @@ public class BaseClass
 	   {
 		   driver = new ChromeDriver();
 		   driver.get(FetchDataFromProperty.readDataFromProperty().getProperty("URL"));
-		 driver.manage().window().maximize();
+		   driver.manage().window().maximize();
 	   }
 	   if(browserName.equalsIgnoreCase("edge"))
 	   {
-		   driver = new EdgeDriver();
-		   driver.get(FetchDataFromProperty.readDataFromProperty().getProperty("URL"));
+		   EdgeOptions options = new EdgeOptions();
+                   options.addArguments("--headless"); // or "--headless" if "new" fails
+                   //options.addArguments("--disable-gpu");
+                   options.addArguments("--window-size=1920,1080");
+                   driver = new EdgeDriver(options);		   
+		   String URL_address = FetchDataFromProperty.readDataFromProperty().getProperty("URL");
+		   driver.get(URL_address);
 		   driver.manage().window().maximize();
 	   }
 	   if(browserName.equalsIgnoreCase("fiefox"))
@@ -89,7 +95,10 @@ public class BaseClass
 	public void closeBrowser() throws InterruptedException
 	{
 		Thread.sleep(2000);
+		if(driver != null)
+		{
 		driver.quit();
+		}
 		
 	}
    
